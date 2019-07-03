@@ -1,0 +1,140 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+button {
+    background: transparent;
+    outline: none;
+    border: none;
+}
+ul li {
+    list-style-type: none;
+}
+
+.galleryBlock {}
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.gallery {
+    padding: 35px;
+    position: relative;
+}
+
+.manageBlock {
+    display: flex;
+    margin-bottom: 35px;
+    width: 100%;
+}
+.manageBlock__item {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: 25px;
+    padding: 25px;
+    text-transform: uppercase;
+    transition: box-shadow .2s, transform .2s;
+    width: 50%;
+}
+.manageBlock__item:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transform: translate(-2px, -2px);
+}
+.manageBlock__item:last-child {
+    margin-right: 0;
+}
+.manageBlock__item-add {
+    background: grey;
+    border-radius:50%;
+}
+.manageBlock__item-remove {
+    background: green;
+    border-radius:50%;
+}
+
+.gallery__content {
+    background: #ebebeb;
+    padding: 10px 30px 30px;
+}
+.galleryItem {
+    margin-bottom: 30px;
+}
+.galleryItem:last-child {
+    margin-bottom: 0;
+}
+.galleryItem__title {
+    color: #093d5b;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5px;
+}
+.galleryItem__list {
+    display: flex;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.modalWindow {
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    padding: 100px;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+.modalWindow-hide {
+    opacity: 0;
+    z-index: -1;
+}
+.modalWindow__title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.modalWindow__btn {
+    color: white;
+    padding: 25px;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: box-shadow .2s, transform .2s;
+    width: 100%;
+}
+.modalWindow__btn:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transform: translate(-2px, -2px);
+}
+
+.modalWindow-green .modalWindow__title {
+        color:black;
+}
+.modalWindow-green .modalWindow__btn{
+    background: yellow;
+}
+.modalWindow-red .modalWindow__title {
+    color: #ed1c24;
+}
+.modalWindow-red .modalWindow__btn{
+    background: #ed1c24;
+}
