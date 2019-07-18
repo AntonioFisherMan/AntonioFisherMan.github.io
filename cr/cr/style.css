@@ -40,31 +40,32 @@ img {
 
 .container {
     margin: 0 auto;
-    max-width: 1000px;   
+    max-width: 1000px;
 }
-.header{
-    width:100%;
+
+.header {
+    width: 100%;
 }
 
 .blockOne {
     background: #252525;
-    position:fixed;
-    z-index:3;
-    top:0px;
-    left:0px;
-    width:100%;
+    position: fixed;
+    z-index: 3;
+    top: 0px;
+    left: 0px;
+    width: 100%;
 }
-.blockOne-active
-{
-    opacity:.5;
-    height:80px;
+
+.blockOne-active {
+    opacity: .5;
+    height: 80px;
 }
 
 .menuBlock {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top:30px;
+    padding-top: 30px;
     padding-bottom: 30px;
 }
 
@@ -147,7 +148,7 @@ img {
 .call__btn {
     position: fixed;
     left: 10px;
-    top: 400px;
+    top: 800px;
     border-radius: 50%;
     background: #00ffff;
     width: 70px;
@@ -157,7 +158,6 @@ img {
 
 .formWindow {
     display: block;
-
 }
 
 .formWindow-active {
@@ -170,13 +170,12 @@ img {
     border-radius: 30%;
     border: 2px solid #00ffff;
     position: relative;
-    top:400px;
-     position: fixed;
-     color:#00ffff;;
-    left:500px;
+    top: 400px;
+    position: fixed;
+    color: #00ffff;
+    left: 500px;
     top: 300px;
-    z-index:3;
-    
+    z-index: 3;
 }
 
 #call_btn-icon {
@@ -328,12 +327,12 @@ img {
 
 .mySlides {
     display: none;
-  height:860px;
+    height: 860px;
 }
 
- .mySlides img {
-     height: 100%;
- }
+    .mySlides img {
+        height: 100%;
+    }
 
 .prev, .next {
     cursor: pointer;
@@ -375,15 +374,15 @@ img {
 
     .text p {
         margin-left: 120px;
-       font-weight:bold;
+        font-weight: bold;
     }
 
 .dots {
     display: flex;
     justify-content: center;
     bottom: 40px;
-    position:absolute;
-   left:50%;
+    position: absolute;
+    left: 50%;
 }
 
 .dot {
@@ -395,8 +394,6 @@ img {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-
-  
 }
 
     .active, .dot:hover {
@@ -567,26 +564,21 @@ img {
 
 .works__buttonsItem {
     border-radius: 20px;
-    background: #dae0e5;
-    text-align: center;
-    color: green;
-    border-color: green;
-    width: 70px;
-    height: 20px;
-}
-.works__buttonsItem-active {
-    border:3px solid red;
-}
-
-.works__buttonsItem:nth-child(1) {
-    border-radius: 20px;
-    background: #1cb88b;
     text-align: center;
     color: white;
     border: none;
     width: 70px;
     height: 20px;
+    margin-left:5px;
+    border:2px solid brown;
+    transition: background .3s;
 }
+.works__buttonsItem-active {
+    background: #1cb88b;
+    transition:.5s;
+    transform:rotate(360deg);
+}
+
 
 .works__photo {
     display: flex;
@@ -1137,9 +1129,13 @@ img {
         max-width: 700px;
         margin: 0 auto;
     }
+    .call__btn-form {
+        left: 150px;
+    }
     .blockOne {
         width: 100%;
     }
+
     .ourScills__itemHeadline {
         width: 150px;
     }
@@ -1175,14 +1171,17 @@ img {
     .portfolio__list {
         display: block;
     }
-    .blockOne
-    {
-        width:100%;
+    .call__btn-form {
+        left: 150px;
     }
-    .mySlides
-    {
-        height:500px;
+    .blockOne {
+        width: 100%;
     }
+
+    .mySlides {
+        height: 500px;
+    }
+
     .portfolio__item {
         display: flex;
         margin-top: 10px;
@@ -1243,9 +1242,15 @@ img {
     .headerMenu {
         display: none;
     }
+    .call__btn-form
+    {
+        left:50px;
+    }
+
     .blockOne {
         width: 100%;
     }
+
     .burgerMenu {
         display: block;
     }
@@ -1317,7 +1322,6 @@ img {
 
 @media screen and ( max-width: 500px ) {
     .blockTwo {
-       
     }
 
     .headerContentBlock__inform {
@@ -1384,6 +1388,19 @@ img {
 
     .formInform__block1 {
         display: block;
+    }
+    .call__btn-form {
+        left: 10px;
+        width:300px;
+        z-index:8;
+    }
+    .rf input
+    {
+        width:200px;
+    }
+    .form__headline
+    {
+        display:none;
     }
 
     .formInform input {
