@@ -1,137 +1,240 @@
 var carSpeed = document.querySelector('.carInfoSpeed');
-var carInform= document.querySelector('.carInfoData');
+var carInform = document.querySelector('.carInfoData');
 var speedBtnUp = document.querySelector('.carInfoBtnUp');
 var speedBtnDown = document.querySelector('.carInfoBtnDown');
-var btnOff= document.querySelector('.off');
+var btnOff = document.querySelector('.off');
 var btnOn = document.querySelector('.on');
-var carStatus=document .querySelector('.carStatus');
-var gears = document.querySelectorAll('.numberGears');
+var carStatus = document.querySelector('.carStatus');
+var carGears = document.querySelector('.numberGearsText');
+var carFuel = document.querySelector('.carFuelInfo');
+var carFuelIndicator = document.querySelector('.carFuelIndicator');
+var fuelBack = document.querySelector('.carFuelBackground');
 
 
-for(var i=0;i<gears.length;i++)
-{ 
-    gears[i].onclick=function()
-    {
-        var gearsType = gears[i].getAttribute('data-type');
-        
-    }
-    
-} 
 
 var car = {
     model: 'Audi',
     color: 'grey',
-    mark:  'Q5',
+    mark: 'Q5',
     speed: 0,
-    gears:5,
-    maxspeed:60,
-    fuel:0,
+    gears: 5,
+    maxspeed: 160,
+    fuel: 80,
+    consumpt: 0,
+
     getInfo: function () {
-        return 'model: ' + this.model+'<br>'+
+        return 'model: ' + this.model + '<br>' +
                'color: ' + this.color + '<br>' +
                'mark: ' + this.mark + '<br>' +
-               'number of gears: '+this.gears+'<br>'+
-               'maxspeed: ' + this.maxspeed+'<br>'+
-               'quantity of fuel: '+this.fuel;
+               'number of gears: ' + this.gears + '<br>' +
+               'maxspeed: ' + this.maxspeed;
+              
 
     },
-    speedUp: function(){
+
+    fuelInfo:function()
+    {
+        return 'Supply of fuel: ' + this.fuel + '<br>' +
+               'Consumpt of fuel: ' + this.consumpt;
+    },
+
+
+    getConsumpt:function()
+    {
+        return this.consumpt;
+    },
+    setConsumpt: function (cons) {
+        this.consumpt = cons;
+    },
+    getFuel:function()
+    {
+        return this.fuel;
+    },
+    setFuel: function (fue) {
+        this.fuel= fue;
+    },
+
+    speedUp: function () {
+       var maxSpeed=160;
         this.speed++;
+        if(maxSpeed<this.speed)
+        {
+        this.speed=maxSpeed;
+        }
+
+       return this.speed;
+        
+
+    },
+
+    speedDown: function () {
+        var minSpeed = 0;
+        this.speed--;
+        if (minSpeed > this.speed) {
+            this.speed = 0;
+        }
         return this.speed;
     },
-    speedDown:function()
-    {
-        var minSpeed=0;
-        this.speed--;
-       if(minSpeed>this.speed)
-       {
-       this.speed=0;
-       }
-    return this.speed; 
+
+    off: function () {
+        this.status = 'The car is not driving';
+        carSpeed.innerHTML = 0;
+        car.speed = 0;
+    speedBtnUp.style.display="none";
+     speedBtnDown.style.display="none";
     },
 
-    off:function()
+    on: function () {
+        this.status = 'The car is driving';
+        speedBtnUp.style.display="block";
+     speedBtnDown.style.display="block";
+    },
+
+    
+    
+
+    gearsSwitchOn:function()
     {
-         this.status='Машина не заведена';
-         carSpeed.innerHTML=0;
-         car.speed=0;
-    },
-    on:function()
-   {
-        this.status = 'Машина  заведена';
-    },
-    check:function()
-   {
-        if(this.speed>=10)
+    if(car.speed>=10)
         {
-            alert('Превышена скорость авто');
-            this.speed = -1;
+            carGears.innerHTML = 2;
+            car.speed +=10;
         }
-   },
-   quantityFuel:function()
-   {
-    if(this.fuel=0)
+     if (car.speed >= 30) {
+            carGears.innerHTML = 3;
+            car.speed +=10;
+        }
+        if (car.speed >= 50) {
+            carGears.innerHTML = 4;
+            car.speed +=10;
+        }
+     if (car.speed >= 80) {
+            carGears.innerHTML = 5;
+           
+        }
+
+      
+    },
+    gearsSwitchOff:function()
     {
-        car.off();
-        console.log('privet');
-    }
-    if(this.fuel>0)
+     if (car.speed >= 0 || car.speed < 10) {
+            carGears.innerHTML = 1; 
+        }
+    if(car.speed>=10)
     {
-        console.log('car is driving');
+        carGears.innerHTML = 2;
+        car.speed -=10;
     }
-   },
+    if (car.speed >= 30) {
+        carGears.innerHTML = 3;
+        car.speed -=10;
+    }
+    if (car.speed >= 50){
+        carGears.innerHTML=4;
+        car.speed -= 10;
+    }
+    if (car.speed >= 80)
+    {
+     carGears.innerHTML=5;
+     car.speed-=10;
+    }
+    },
+    consumptFuel: function () {
+    if (carGears.innerHTML == 1) {
+        car.setConsumpt(8.4);
+        carFuel.innerHTML = car.fuelInfo();
+    }
+    else if (carGears.innerHTML == 2) {
+        car.setConsumpt(7.2);
+        carFuel.innerHTML = car.fuelInfo();
+    }
+    else if (carGears.innerHTML == 3) {
+        car.setConsumpt(6.3);
+        carFuel.innerHTML = car.fuelInfo();
+    }
+    else if (carGears.innerHTML == 4) {
+        car.setConsumpt(5.4);
+        carFuel.innerHTML = car.fuelInfo();
+    }
+    else if (carGears.innerHTML == 5) {
+        car.setConsumpt(4.5);
+        carFuel.innerHTML = car.fuelInfo();
+    }
+},
+tankVolume:function(){
+
+ if(carGears.innerHTML==1)
+{
+var timerId=setInterval(function()
+{
+car.fuel-=5;
+console.log(car.fuel);
+ clearInterval(timerId);
+},100);
+}
+}
 
 };
+
+carFuel.innerHTML = car.fuelInfo();
 carInform.innerHTML = car.getInfo();
 carSpeed.innerHTML = car.speed;
-speedBtnUp.onclick = function ()
-{
-    carSpeed.innerHTML = car.speedUp();
-    car.check();
-   
-}
-speedBtnDown.onclick = function () {
-    carSpeed.innerHTML = car.speedDown();
+var counter=0;
+speedBtnUp.onmousedown= function () {
+
+    var speedUp=setInterval(function(){
+        counter++;
+         car.gearsSwitchOn();
+        car.consumptFuel();
+        carSpeed.innerHTML = car.speedUp();
+    speedBtnUp.onmouseup=function(){
+        clearInterval(speedUp);
+    }
+    },100);
+      }
+
+speedBtnDown.onmousedown= function () {
+    var speedDown=setInterval(function(){
+        counter--;
+       carSpeed.innerHTML = car.speedDown();
+        car.gearsSwitchOff();
+    speedBtnDown.onmouseup=function(){
+        clearInterval(speedDown);
+    }
+    },100);
+
+    car.consumptFuel(); 
+     
 }
 
-btnOff.onclick = function ()
-{
+btnOff.onclick = function () {
 
     car.off();
-    carStatus.innerHTML=car.status;
- carStatus.style.display="block";
-     function engineOff() {
- carStatus.style.display="none";
-}
-setTimeout(engineOff, 2000);
-}
+    carStatus.innerHTML = car.status;
+    carStatus.style.display = "block";
+    function engineOff() {
+        carStatus.style.display = "none";
 
-btnOn.onclick=function()
-{ 
+    setTimeout(engineOff, 2000);
 
+  
+}}
+
+btnOn.onclick = function () {
+    car.tankVolume();
     car.on();
-    carStatus.innerHTML=car.status;
+    carStatus.innerHTML = car.status;
 
- carStatus.style.display="block";
+    carStatus.style.display = "block";
     function engineOn() {
- carStatus.style.display="none";
-}
-setTimeout(engineOn, 2000);
-    
-    
-}
+        carStatus.style.display = "none";
 
-
-
-
-
-
-
-
-/*function show(objName, obj) {
-    for (var i in obj) {
-        var result = "";
-        result += objName + "." + i + " = " + obj[i] + "\n";
+      
     }
-    return result;
-}*/
+    setTimeout(engineOn, 2000);
+     
+
+
+
+}
+
