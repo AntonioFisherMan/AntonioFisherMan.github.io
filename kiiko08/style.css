@@ -1,36 +1,66 @@
-﻿* {
+
+* {
     margin: 0;
     padding: 0;
-   }
-.carStatus
-{
-font-size: 30px;
-color:#ffd800;
-font-weight: bold;
-margin-left:70px;
-margin-top:40px;
 }
-.car
-{
-    display:flex;
-    justify-content:space-around;
+
+.carStatus {
+    font-size: 30px;
+    color: #ffd800;
+    font-weight: bold;
+    margin-left: 70px;
+    margin-top: 40px;
 }
-.carInfoData
-{
-    color:#ffd800;
-    font-size:20px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    display:flex;
-    justify-content:center;
+
+.car {
+    display: flex;
+    justify-content: space-around;
 }
+
+.carInfoData {
+    color: #ffd800;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.fuelСonsumption {
+    color: #ffd800;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
 .carInfo {
     width: 400px;
     height: 250px;
     background: #808080;
     margin: 0 auto;
     margin-top: 100px;
-    padding-top:50px;
+    padding-top: 50px;
 }
+.carFuelInfo
+{
+    font-size:20px;
+    color:#ffd800;
+    margin-left:130px;
+}
+.carFuelBackground {
+    border: 2px solid white;
+    width: 200px;
+    height: 30px;
+    margin-left: 100px;
+    margin-top: 10px;
+    background: #00ff90;
+}
+.carFuelIndicator {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .carInfo1 {
     width: 400px;
     height: 250px;
@@ -39,15 +69,25 @@ margin-top:40px;
     margin-top: 100px;
     padding-top: 50px;
 }
+.carFuel {
+    width: 400px;
+    height: 100px;
+    background: #645959;
+    margin-left: 760px;
+    padding-top: 50px;
+    display:block;
+}
+
 button {
     background: #00ff90;
     margin-top: 50px;
     width: 100px;
     font-weight: bold;
 }
+
 .carInfoSpeed {
     border: 2px solid white;
-    border-radius:100px;
+    border-radius: 100px;
     width: 100px;
     height: 30px;
     margin: 0 auto;
@@ -56,46 +96,46 @@ button {
     display: flex;
     justify-content: center;
 }
-.carInfoBtns
-{
-    display:flex;
-    justify-content:space-between;
-    padding-left:30px;
-    padding-right:30px;
+
+.carInfoBtns {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
 }
-.carDisplay
-{
-   margin-left:100px;
-   
+
+.carDisplay {
+    margin-left: 100px;
 }
+
 .on {
     background: green;
     width: 100px;
     height: 40px;
 }
+
 .off {
     background: red;
     width: 100px;
     height: 40px;
 }
-.numberGears
-{
+
+.numberGears {
     display: flex;
     justify-content: space-between;
-    margin-left:50px;
+    margin-left: 50px;
     margin-right: 50px;
-    margin-top:20px;
+    margin-top: 20px;
+}
 
+.numberGears-active {
+    background: yellow;
 }
-.numberGears-active
-{
-background:yellow;
-}
-.numberGears p
-{
-    color:black;
-    font-size:20px;
+
+.numberGears p {
+    color: black;
+    font-size: 25px;
     font-weight: bold;
-    border:3px solid green;
-    
+    border: 3px solid green;
+    margin-left:150px;
 }
