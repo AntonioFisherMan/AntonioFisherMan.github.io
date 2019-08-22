@@ -3,7 +3,9 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+    margin-bottom:50px;
+}
 .carStatus {
     font-size: 30px;
     color: #ffd800;
@@ -11,19 +13,11 @@
     margin-left: 70px;
     margin-top: 40px;
 }
-
-.car {
+.carConstr {
     display: flex;
-    justify-content: space-around;
+   
 }
 
-.carInfoData {
-    color: #ffd800;
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-}
 .fuelСonsumption {
     color: #ffd800;
     font-size: 20px;
@@ -40,12 +34,13 @@
     margin-top: 100px;
     padding-top: 50px;
 }
-.carFuelInfo
-{
-    font-size:20px;
-    color:#ffd800;
-    margin-left:130px;
+
+.carFuelInfo {
+    font-size: 20px;
+    color: #ffd800;
+    margin-left: 130px;
 }
+
 .carFuelBackground {
     border: 2px solid white;
     width: 200px;
@@ -53,9 +48,6 @@
     margin-left: 100px;
     margin-top: 10px;
     background: #00ff90;
-}
-.carFuelIndicator {
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,14 +60,21 @@
     margin: 0 auto;
     margin-top: 100px;
     padding-top: 50px;
+    color: #ffd800;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
 }
+
 .carFuel {
     width: 400px;
     height: 100px;
     background: #645959;
-    margin-left: 760px;
     padding-top: 50px;
-    display:block;
+    margin-top:250px;
+
+    display: block;
 }
 
 button {
@@ -137,5 +136,5 @@ button {
     font-size: 25px;
     font-weight: bold;
     border: 3px solid green;
-    margin-left:150px;
+    margin-left: 150px;
 }
