@@ -1,11 +1,72 @@
 
+.fa
+{
+    color:pink;
+    font-size:25px;
+  
+  position: absolute;
+  left:810px;
+  bottom:300px;
+}
 * {
     margin: 0;
     padding: 0;
 }
-body{
-    margin-bottom:50px;
+body {
+    margin-bottom: 50px;
 }
+.carOption__headline {
+    text-transform: uppercase;
+    background:#645959;
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color:yellow;
+}
+.carOption__form {
+    margin: 0 auto;
+    flex-direction: column;
+    width: 350px;
+    display: none;
+}
+.carOption__form-active {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+
+}
+.inputs-active{
+    border: 2px solid red;
+}
+.textCar
+{
+    width:100px;
+    height:50px;
+    background:#ffd800;
+    text-transform:uppercase;
+    color:red;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+    width:350px;
+    margin:0 auto;
+    display:none;
+
+}
+.textCar-active{
+    display:flex;
+    position: relative;
+}
+.new__car {
+    margin: 0 auto;
+    width: 350px;
+}
+
 .carStatus {
     font-size: 30px;
     color: #ffd800;
@@ -13,10 +74,13 @@ body{
     margin-left: 70px;
     margin-top: 40px;
 }
+
+
 .carConstr {
-    display: flex;
+    display:flex;
    
 }
+
 
 .fuelСonsumption {
     color: #ffd800;
@@ -25,7 +89,6 @@ body{
     display: flex;
     justify-content: center;
 }
-
 .carInfo {
     width: 400px;
     height: 250px;
@@ -71,9 +134,8 @@ body{
     width: 400px;
     height: 100px;
     background: #645959;
+ margin-top:250px;
     padding-top: 50px;
-    margin-top:250px;
-
     display: block;
 }
 
@@ -137,4 +199,16 @@ button {
     font-weight: bold;
     border: 3px solid green;
     margin-left: 150px;
+}
+.carInformBlock
+{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+    margin:0 auto;
+    width:350px;
+    height:150px;
+    background:grey;
+    font-size:20px;
+    color:white;
 }
