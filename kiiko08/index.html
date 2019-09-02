@@ -1,49 +1,54 @@
-<!DOCTYPE html>
-
+﻿﻿﻿<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
+    <link rel="stylesheet" href="style.css">
+   
+
 </head>
 <body>
-   
-   
+    <div class="prev"><a href="#">Prev</a></div>
+ <div class="slider">
 
-    <div class="carOption">
-        <p class="carOption__headline">Car Factory</p>
-        <form class="carOption__form">
-            <select type="text" class="inputs"id="carOption__model">
-                <option>Choose car model</option>
-                <option>Bmw</option>
-                <option>Audi</option>
-                <option>Mercedes</option>
-                <option>Lexus</option>
-            </select>
-            <input type="text" class="inputs"id="carOption__mark" placeholder="Enter mark">
-            <select type="text"class="inputs" id="carOption__color">
-                <option>Choose  color</option>
-                <option>Black</option>
-                <option>White</option>
-                <option>Red</option>
-                <option>Blue</option>
-            </select>
-            <input type="number" class="inputs"id="carOption__gears" placeholder="Enter gears">
-            <input type="number" class="inputs"id="carOption__maxSpeed" placeholder="Enter max speed">
-            <input type="number"class="inputs" id="carOption__fuel" placeholder="Enter tank">
-            <button class="new__car">Create car</button>
+     <div class="slider__items slider__items-active">
+         <p class=slider__itemsHeadline>База данных это-</p>
+         <p class=slider__itemsText>База данных это набор сведений,хранящийся некоторым упорядоченным образом</p>
+     </div>
+      <div class="slider__items">
+         <p class=slider__itemsHeadline>CУБД</p>
+         <p class=slider__itemsText>Система управления баами данных это совокуность языковых и 
+         програмных средств которая осуществляет доступ к данным,
+     позволяет их создавать,менять и удалять,обеспечивает безопасность</p>
+     </div>
+      <div class="slider__items">
+         <p class=slider__itemsHeadline>Взаимодействие с данными</p>
+         <div class=slider__itemsText>
+             <div class="slider__itemsTextBackground">Язык запросов</div>
+              <div class="slider__itemsTextBackground">СУБД</div>
+               <div class="slider__itemsTextBackground">Данные</div>
+         </div>
+     </div>
+     <div class="slider__items ">
+         <p class=slider__itemsHeadline>Виды СУБД</p>
+            <div class="slider__itemsTextBtn">
+                 <button>Иерархические</button>
+             <button>Сетевые</button>
+             <button>Реляционные</button>
+             <button>Обьектно-ориентированные</button>
+             <button>Гибридные</button>
+            </div>
+     </div>
+ </div>
+       <div class="next"><a href="#">Next</a></div>
 
-        </form>
-        <p class="textCar"> 
- <i class="fa fa-car" aria-hidden="true"></i>
 
-        </p>
-
-
-    </div>
-    
-
-    <script src="Script1.js"></script>
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/066621f315.js"></script>
+    <script src="javascript.js"></script>
+
 </body>
 </html>
