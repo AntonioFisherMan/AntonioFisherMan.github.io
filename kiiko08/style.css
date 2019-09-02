@@ -1,214 +1,122 @@
-
-.fa
+body
 {
-    color:pink;
-    font-size:25px;
-  
-  position: absolute;
-  left:810px;
-  bottom:300px;
-}
-* {
-    margin: 0;
-    padding: 0;
-}
-body {
-    margin-bottom: 50px;
-}
-.carOption__headline {
-    text-transform: uppercase;
-    background:#645959;
-    width: 350px;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 30px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    color:yellow;
-}
-.carOption__form {
-    margin: 0 auto;
-    flex-direction: column;
-    width: 350px;
-    display: none;
-}
-.carOption__form-active {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    width: 350px;
+	font-family:Arial;
+	display: flex;
 
 }
-.inputs-active{
-    border: 2px solid red;
-}
-.textCar
+button
 {
-    width:100px;
-    height:50px;
-    background:#ffd800;
-    text-transform:uppercase;
-    color:red;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-weight:bold;
-    width:350px;
-    margin:0 auto;
-    display:none;
-
+	width:200px;
+	height:50px;
+	background: blue;
+	color:white;
+	text-align: center;
+	font-size:20px;
 }
-.textCar-active{
-    display:flex;
-    position: relative;
-}
-.new__car {
-    margin: 0 auto;
-    width: 350px;
-}
-
-.carStatus {
-    font-size: 30px;
-    color: #ffd800;
-    font-weight: bold;
-    margin-left: 70px;
-    margin-top: 40px;
-}
+.slider__itemsTextBtn
+{
+	display:flex;
+	flex-direction: column;
+	margin-left: 160px;
+	margin-top:10px;
 
 
-.carConstr {
-    display:flex;
-   
 }
-
-
-.fuelСonsumption {
-    color: #ffd800;
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    display: flex;
-    justify-content: center;
+.slider
+{
+	margin:110px auto;
+	width: 500px;
+	height: 300px;
+	opacity: 0.5;
+	position:relative;
+	top:0;
+	right:0;
+	left:0; 
 }
-.carInfo {
-    width: 400px;
-    height: 250px;
-    background: #808080;
-    margin: 0 auto;
-    margin-top: 100px;
-    padding-top: 50px;
+.slider__items
+{
+display: none;
+width: 500px;
+height: 300px;
 }
-
-.carFuelInfo {
-    font-size: 20px;
-    color: #ffd800;
-    margin-left: 130px;
+.slider__itemsTextBackground
+{
+	width:100px;
+	height: 50px;
+	background:blue;
+	color:white;
+	margin-right: 30px;
+	margin-left: 30px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-
-.carFuelBackground {
-    border: 2px solid white;
-    width: 200px;
-    height: 30px;
-    margin-left: 100px;
-    margin-top: 10px;
-    background: #00ff90;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.slider__items-active
+{
+	display: block;
 }
+.slider__items:first-child
+{
+	width: 500px;
+	background:pink;
 
-.carInfo1 {
-    width: 400px;
-    height: 250px;
-    background: #808080;
-    margin: 0 auto;
-    margin-top: 100px;
-    padding-top: 50px;
-    color: #ffd800;
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    display: flex;
-    justify-content: center;
 }
-
-.carFuel {
-    width: 400px;
-    height: 100px;
-    background: #645959;
- margin-top:250px;
-    padding-top: 50px;
-    display: block;
+.slider__items:nth-child(2)
+{
+	width: 500px;
+	background:red;
 }
-
-button {
-    background: #00ff90;
-    margin-top: 50px;
-    width: 100px;
-    font-weight: bold;
+.slider__items:nth-child(3)
+{
+	width: 500px;
+	background:yellow;
 }
+.slider__items:nth-child(4)
+{
+	width: 500px;
+	background:grey;
 
-.carInfoSpeed {
-    border: 2px solid white;
-    border-radius: 100px;
-    width: 100px;
-    height: 30px;
-    margin: 0 auto;
-    font-size: 30px;
-    color: red;
-    display: flex;
-    justify-content: center;
 }
-
-.carInfoBtns {
+a{
+	text-decoration:none;
+	color:#FD7EAD;
+	font-size:20px;
+}
+a:hover
+{
+	color:red;
+}
+.prev
+{
+	position: relative;
+	top:250px;
+	left:350px;
+}
+.next
+{
+	position: relative;
+	top:250px;
+	right:350px;
+}
+.slider__itemsHeadline
+{
+	margin:0 auto;
+	width:450px;
+	height:30px;
+	font-size:25px;
+	display: flex;
+	justify-content: center;
+	background: black;
+	color:white;
+}
+.slider__itemsText
+{
+	font-size:20px;
+	margin-top:90px;
+	color:black;
+	font-weight: bold;
+	margin-left:20px;
     display: flex;
     justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.carDisplay {
-    margin-left: 100px;
-}
-
-.on {
-    background: green;
-    width: 100px;
-    height: 40px;
-}
-
-.off {
-    background: red;
-    width: 100px;
-    height: 40px;
-}
-
-.numberGears {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 20px;
-}
-
-.numberGears-active {
-    background: yellow;
-}
-
-.numberGears p {
-    color: black;
-    font-size: 25px;
-    font-weight: bold;
-    border: 3px solid green;
-    margin-left: 150px;
-}
-.carInformBlock
-{
-   display:flex;
-   justify-content: center;
-   align-items: center;
-    margin:0 auto;
-    width:350px;
-    height:150px;
-    background:grey;
-    font-size:20px;
-    color:white;
 }
