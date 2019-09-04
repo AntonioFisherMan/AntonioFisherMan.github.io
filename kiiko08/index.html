@@ -1,54 +1,246 @@
-﻿﻿﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
     <link rel="stylesheet" href="style.css">
-   
+
 
 </head>
 <body>
-    <div class="prev"><a href="#">Prev</a></div>
- <div class="slider">
+    <div class="next"><i class="fas fa-angle-left"></i></div>
+    <div class="slider">
+        <div class="slider__items slider__items-active">
 
-     <div class="slider__items slider__items-active">
-         <p class=slider__itemsHeadline>База данных это-</p>
-         <p class=slider__itemsText>База данных это набор сведений,хранящийся некоторым упорядоченным образом</p>
-     </div>
-      <div class="slider__items">
-         <p class=slider__itemsHeadline>CУБД</p>
-         <p class=slider__itemsText>Система управления баами данных это совокуность языковых и 
-         програмных средств которая осуществляет доступ к данным,
-     позволяет их создавать,менять и удалять,обеспечивает безопасность</p>
-     </div>
-      <div class="slider__items">
-         <p class=slider__itemsHeadline>Взаимодействие с данными</p>
-         <div class=slider__itemsText>
-             <div class="slider__itemsTextBackground">Язык запросов</div>
-              <div class="slider__itemsTextBackground">СУБД</div>
-               <div class="slider__itemsTextBackground">Данные</div>
-         </div>
-     </div>
-     <div class="slider__items ">
-         <p class=slider__itemsHeadline>Виды СУБД</p>
-            <div class="slider__itemsTextBtn">
-                 <button>Иерархические</button>
-             <button>Сетевые</button>
-             <button>Реляционные</button>
-             <button>Обьектно-ориентированные</button>
-             <button>Гибридные</button>
+            <div class=slider__itemsHeadline>База данных это-</div>
+
+
+            <p class=slider__itemsText>База данных это набор сведений,хранящийся некоторым упорядоченным образом</p>
+        </div>
+
+        <div class="slider__items">
+
+            <div class="slider__itemsHeadline">CУБД</div>
+
+
+
+            <p class="slider__itemsText">
+                Система управления базами данных это совокуность языковых и
+                програмных средств которая осуществляет доступ к данным,
+                позволяет их создавать,менять и удалять,обеспечивает безопасность
+            </p>
+
+        </div>
+
+        <div class="slider__items">
+
+            <div class="slider__itemsHeadline">Взаимодействие с данными</div>
+            <div class="slider__itemsText">
+                <div class="slider__itemsTextBackground">Язык запросов</div>
+                <div class="slider__itemsTextBackground">СУБД</div>
+                <div class="slider__itemsTextBackground">Данные</div>
             </div>
-     </div>
- </div>
-       <div class="next"><a href="#">Next</a></div>
 
 
-     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/066621f315.js"></script>
-    <script src="javascript.js"></script>
+        </div>
+
+
+        <div class="slider__items">
+            <div class="slider__itemsHeadline">Виды СУБД</div>
+
+            <div class="slider__itemsText">
+                <div class="slider__itemsTextBtn">
+                    <button>Иерархические</button>
+                    <button>Сетевые</button>
+                    <button>Реляционные</button>
+                    <button>Обьектно-ориентированные</button>
+                    <button>Гибридные</button>
+                </div>
+            </div>
+        </div>
+        <div class="slider__items">
+            <div class="slider__itemsHeadline">Особенности реляционных СУБД</div>
+            <div class="slider__itemsText">
+                <ul>
+                    <li>Хранение данных в ячейках</li>
+                    <li>Одной ячейке - одно значение</li>
+                    <li>Колонки именованые</li>
+                    <li>Одна колонка - один тип данных</li>
+                    <li>Таблица может не иметь стро, но стобец обязательно</li>
+                </ul>
+            </div>
+        </div>
+        <div class="slider__items">
+
+            <div class="slider__itemsHeadline">C чем нам предстоит работать</div>
+            <div class="slider__itemsText">
+                <div class="slider__itemsTextBackground">SQL</div>
+                <div class="slider__itemsTextBackground">Microsoft SQL Server</div>
+                <div class="slider__itemsTextBackground">Relation DataBase</div>
+            </div>
+
+
+        </div>
+        <div class="slider__items">
+            <div class="slider__itemsHeadline">Как это представить</div>
+            <div class="slider__itemsText">
+                <table>
+                    <tr>
+                        <th>Фамилия</th>
+                        <th>Имя</th>
+                        <th>Отчество </th>
+                        <th>Телефон</th>
+                    </tr>
+                    <tr>
+                        <td>Иванов</td>
+                        <td>Иван</td>
+                        <td>Иванович</td>
+                        <td>0662637699</td>
+                    </tr>
+                    <tr>
+                        <td>Петр</td>
+                        <td>Ильич</td>
+                        <td>Чайковский</td>
+                        <td>0504030540</td>
+                    </tr>
+                    <tr>
+                        <td>Василий</td>
+                        <td>Петрович</td>
+                        <td>Пупкин</td>
+                        <td>0502342540</td>
+                    </tr>
+                </table>
+               </div>
+            </div>
+            <div class="slider__items">
+            <div class="slider__itemsHeadline">Оcновные понятия</div>
+            <div class="slider__itemsText">
+                <ul class="slider__itemsTextUl">
+                    <li>Индекс</li>
+                    <li>Уникальный индекс</li>
+                    <li>Первичный ключ</li>
+                    <li>Внешний ключ</li>
+                </ul>
+            </div>
+        </div>
+        <div class="slider__items">
+            <div class="slider__itemsHeadline">Первичный ключ</div>
+            <div class="slider__itemsText">
+            	<div class="slider__itemsTextColumn">
+                    <div class="a">
+                    <button>Логический</button>
+                    <p class="slider__itemsTextColumn2">Естественный смысловой ключ,например номер паспорт</p>
+                    </div>
+                    <div class="a">
+                        <button>Суррогатный</button>
+                        <p class="slider__itemsTextColumn2"> Искуственный, например номер строки в таблице баззы данных</p>
+                    </div>
+            	</div>
+            
+        
+            </div>
+        </div>
+         <div class="slider__items">
+            <div class="slider__itemsHeadline">Описание работы опeраторов </div>
+             <div class="slider__itemsText">
+
+            <div class="slider__itemsTextOperators">
+                <div class="sliderOperatorsColumn1">
+           
+<div>
+    <p class="sliderOperatorsColumnText" >SELECT </p>
+    <div class="sliderOperatorsInform">
+        <div><strong>SELECT </strong> - Ключевое слово, которое сообщает базе данных о том, что оператор является запросом. <br>
+            Все запросы начинаются с этого слова, за ним следует пробел.</div>
+            <div><a href="http://www.quizful.net/post/sql-select"target="_blank">Подробнее</a></div>
+      </div>
+</div>
+<div>
+            <p class="sliderOperatorsColumnText" >FROM  </p>
+              <div class="sliderOperatorsInform">
+         <div><strong>From </strong> - MySQL оператор FROM используется для отображения таблиц и любых объединений,<br>
+         необходимых для запроса в MySQL.</div>
+            <div><a href="https://oracleplsql.ru/from-mysql.html"target="_blank">Подробнее</a></div>
+      </div>
+  </div>
+
+
+  <div>
+       <p class="sliderOperatorsColumnText" >WHERE  </p>  
+       <div class="sliderOperatorsInform">
+         <div>Оператор SQL <strong>Where</strong> - служит для задания дополнительного условия выборки, <br>
+         операций вставки, редактирования и удаления записей..</div>
+            <div><a href="http://2sql.ru/novosti/sql-where/"target="_blank">Подробнее</a></div>
+      </div>
+  </div>
+  <div>
+      <p class="sliderOperatorsColumnText" >IN </p>
+       <div class="sliderOperatorsInform">
+         <div>Оператор SQL <strong>In</strong> - позволяет определить, совпадает ли значение <br>
+         объекта со значением в списке.</div>
+            <div><a href="http://2sql.ru/novosti/sql-in/"target="_blank">Подробнее</a></div>
+      </div>
+  </div>
+                </div>
+           <div class="sliderOperatorsColumn1">
+            <div>
+            <p class="sliderOperatorsColumnText">ORDER BY </p>
+      <div class="sliderOperatorsInform">
+         <div>Оператор SQL <strong>Order By</strong>   выполняет сортировку выходных значений.</div>
+            <div><a href="http://2sql.ru/novosti/sql-order-by/"target="_blank">Подробнее</a></div>
+      </div>
+  </div>
+            <div>
+            <p class="sliderOperatorsColumnText">GROUP BY </p>
+             <div class="sliderOperatorsInform">
+         <div>Оператор SQL <strong>Group by</strong> - используется для объединения результатов выборки <br>по одному или нескольким столбцам.</div>
+            <div><a href="http://2sql.ru/novosti/sql-group-by/"target="_blank">Подробнее</a></div>
+      </div>
+  </div>
+  <div>
+            <p class="sliderOperatorsColumnText">BETWEEN  </p>  
+             <div class="sliderOperatorsInform">
+         <div>Оператор SQL <strong>Between</strong> задает диапазон, в котором будет осуществляться проверка условия.</div>
+            <div><a href="http://www.quizful.net/post/sql-between"target="_blank">Подробнее</a></div>
+      </div>
+  </div>
+  <div>
+            <p class="sliderOperatorsColumnText">LIKE   </p>
+             <div class="sliderOperatorsInform">
+         <div>Оператор SQL  <strong>Like</strong> устанавливает соответствие символьной строки с шаблоном.</div>
+            <div><a href="http://2sql.ru/novosti/sql-like/"target="_blank">Подробнее</a></div>
+      </div>
+  </div>
+            </div>
+           
+
+            </div>
+
+            </div>
+           
+             
+      
+
+     
+
+
+     
+
+     
+
+     
+        </div>
+        </div>
+
+        <div class="prev"> <i class="fas fa-angle-right"></i></div>
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+                integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+                crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/066621f315.js"></script>
+        <script src="Script1.js"></script>
 
 </body>
 </html>
