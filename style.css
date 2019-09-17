@@ -1,7 +1,39 @@
-﻿.box-color
+body
 {
-    background:red;
+    padding: 0;
+    margin:0;
 }
+.navigate
+{
 
+    display: flex;
+    margin: 0 auto;
+    width: 500px;
+}
+.navigate ul
+{
 
-
+    display: flex;
+    padding:0;
+    background: chocolate;
+}
+.navigate li
+{
+    display: flex;
+     height:50px;
+    margin-left: 20px;
+    margin-right: 50px;
+    list-style-type: none;
+    justify-content:center;
+    align-items: center;
+}
+.navigate a
+{
+    text-decoration: none;
+    color:fuchsia;
+}
+.navigate a:hover
+{
+    color:cadetblue;
+    transform: scale(2.7);
+}
