@@ -1,7 +1,7 @@
 <?php
 require("function.php");
-
 ?>
+
 <!doctype html>
 <html lang="<?php echo getConfig('lang');?>">
     <meta charset="UTF-8">
@@ -13,8 +13,10 @@ require("function.php");
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-
-
+<?php
+echo"<pre>";
+echo var_dump(getOptions(1,10));
+echo"</pre>";
+?>
 </body>
 </html>
