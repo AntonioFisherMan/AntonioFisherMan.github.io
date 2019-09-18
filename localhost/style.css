@@ -7,15 +7,23 @@ body
 {
 
     display: flex;
-    margin: 0 auto;
-    width: 500px;
-}
-.navigate ul
-{
-
-    display: flex;
-    padding:0;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
     background: chocolate;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.divHover
+{
+    display: none;
+}
+.navigate li:hover .divHover
+{
+    display: flex;
+    flex-direction:column;
+    position:relative;
+
 }
 .navigate li
 {
@@ -26,7 +34,10 @@ body
     list-style-type: none;
     justify-content:center;
     align-items: center;
+    flex-direction:column; background:navajowhite;
+    padding: 10px 20px 10px 20px;
 }
+
 .navigate a
 {
     text-decoration: none;
