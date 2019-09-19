@@ -14,7 +14,14 @@ require("function.php");
 </head>
 <body>
 <?php
+
 echo"<pre>";
+
+echo getOptionId($name='title',$value='description');echo"<br>";
+echo getOption($name);echo"<br>";
+echo addOption($name='Antin',$value='ki');echo"<br>";
+//echo changeOptions($id,$name='',$value='')
+echo deleteOptions($id='1');
 echo var_dump(getOptions(1,10));
 echo"</pre>";
 ?>
