@@ -1,0 +1,551 @@
+﻿﻿﻿﻿﻿﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Проэкт 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.css">
+
+</head>
+<body>
+  <header class="header">
+     <section class="header__block">
+     	 <a name="id1"></a>
+     	<div class="container">
+     		<div class="header__blockInform">
+     			<div>
+     		<p class="header__blockText">sh<span>o</span>pno</p>
+     	</div>
+     	<div class="header__blockMenu">
+     		<nav>
+<ul>
+<li><a href="#id1">Main</a></li>
+<li><a href="#id2">About us</a></li>
+<li><a href="#id3">Featured works</a></li>
+<li><a href="#id4">Our services</a></li>
+<li><a href="#id5">Our team</a></li>
+</ul>
+</nav>
+     	</div>
+     	<span class="header__blockBtn" >
+         <i class="fas fa-bars"></i>
+     	</span>
+
+     	  <nav class="burgerMenu">
+     	  	<span class="burgerBtn">
+                    <i class="fas fa-ellipsis-h"></i>
+                </span>
+                        <ul class="burgerMenu__list">
+                            <li class="burgerMenu__item"><a href="#id1">Home</a></li>
+                            <li class="burgerMenu__item"><a href="#id2">Services</a></li>
+                            <li class="burgerMenu__item"><a href="#id3">Portfolio</a></li>
+                            <li class="burgerMenu__item"><a href="#id4">About</a></li>
+                            <li class="burgerMenu__item"><a href="#id5">Contact</a></li>
+                        </ul>
+                    </nav>
+     	     		</div>
+     		
+     	</div>
+     	
+     </section>
+     <section class="header__block2">
+     	<div class="container">
+     	<h1>Say Hello to <span>SHOPNO!</span></h1>
+     	<p><span>Agency</span> CORPORATE SHOPNO Theme</p>
+     	<div class="header__block2Btn">
+     		<button id="headerBtn">Contact us</button>
+     	</div>
+     	
+     	<div class="header__block2Img">
+     		<div class="header__block2Icon1"> 
+     			<img src="img/glass.png">
+     		</div>
+     	<div class="header__block2Icon2">
+     	<img src="img/glass1.png">
+       </div>
+     </div>
+ </div>
+     </section>
+    </header>
+    <main>
+    
+    	<section class="blockAbout">
+    		 <a name="id2"></a>
+    		<div class="container">
+    			<div class="about">
+    				<div class="siteHeadline">
+    					<h1>About us</h1>
+    					<p>Lorem ipsum dolor sit amet event landing template</p>
+    				</div>
+    				<div class="aboutInform">
+    					<div class="aboutInformSlider">
+    		<div class="slide__item">
+            <div class="slide__itemBackground"></div>
+	       </div>
+	      <div class="slide__item">
+            <div class="slide__itemBackground"></div>
+	       </div>
+	        <div class="slide__item">
+            <div class="slide__itemBackground"></div>
+	       </div>
+	      <div class="slide__item">
+            <div class="slide__itemBackground"></div>
+	       </div>
+		     <div class="href">
+	            <a class="prev" >&#10094;</a>
+                <a class="next">&#10095;</a>
+            </div>
+                <div class="dots">
+                    <span class="dotA" onclick="currentSlides(1)"></span>
+                    <span class="dotA" onclick="currentSlides(2)"></span>
+                    <span class="dotA" onclick="currentSlides(3)"></span>
+                    <span class="dotA" onclick="currentSlides(4)"></span>
+                </div>
+    					</div>
+    					<div class="aboutInformText">
+    						<h1>We Actually Do amazing works</h1>
+    						<p>A visual approach is an approach to a runway at an airport <br>
+                               conducted under instrument flight rules. The pilot must at <br>
+                               all times have either the airport or the preceding aircraft <br>
+                               in approach correct sight. conducted under instrument flight rules. <br>
+                               </p>
+    						<h1>why we are the great?</h1>
+    						<p>A visual approach is an approach to a runway at an airport <br>
+                               conducted under instrument flight rules.<br>
+                               The preceding aircraft in approach correct sight.</p>
+    					</div>
+    				</div>
+    			</div>
+    			
+    		</div>
+    	</section>
+    	<section class="blockGallery">
+    		 <a name="id3"></a>
+    		<div class="container">
+    			<div class="gallery">
+    				<div class="siteHeadline">
+    					<h1>Featured works</h1>
+    					<p>Lorem ipsum dolor sit amet event landing template</p>
+    				</div>
+    				<div class="galleryImg">
+    					<div class="galleryImgColumn">
+
+    						<img src="img/gallery1.png">
+    						<img src="img/gallery2.png">
+    						<img src="img/gallery3.png">
+    					</div>
+    					<div class="galleryImgColumn">
+    						<img src="img/gallery4.png">
+    						<img src="img/gallery5.png">
+    					    <img src="img/gallery6.png">
+    					</div>
+    				</div>
+    			</div> 
+    		</div>
+    	</section>
+<section class="blockServices">
+	 <a name="id4"></a>
+	<div class="container">
+		<div class="services">
+			 <div class="siteHeadline">
+    		<h1>Our services</h1>
+    		<p>Lorem ipsum dolor sit amet event landing template</p>
+    		 </div>
+            <div class="servicesImg">
+    			<div class="servicesImgColumn">
+    			
+    				<div class="servicesImg__item"id="elementBlock" >
+    					<div class="servicesImg__itemBack" id="servicesImg__itemBack" id="a">
+    			    <div class="servicesImg__itemText">
+    			<h1>Designing is The CooL LOVE FOR.</h1>
+    			<p>Our most popular service is our Virtual Receptionist. We<br>
+    				know that sometimes it’s something and you middle most<br> 
+    				this job was posted less than five minutes ago, and we think <br>
+    				it’s a good match for you. If you submit a proposal now, you’ll <br>
+    				be one of the first candidates. You may even catch the client<br>
+    				 while they’re still online.</p>
+    				<i class="far fa-long-arrow-right"></i>
+    		
+    			</div>
+    		    </div>
+    		</div>
+    		   
+    			<div class="servicesImg__item">
+    			<div class="servicesImg__itemBack">
+    			    <div class="servicesImg__itemText">
+    			
+    				 <h1>Cool psd Design</h1>
+    			<p>Our most popular service is our we know <br>
+    				that sometimes it’s something and you<br>
+    				middle most..</p>
+    				<button>Know more</button>
+    				<i class="far fa-long-arrow-right"></i>
+    			   </div>
+               
+    		    </div>
+    		</div>
+    			</div>
+    			<div class="servicesImgColumn">
+    			<div class="servicesImg__item" id="a">
+    			<div class="servicesImg__itemBack">
+    			    <div class="servicesImg__itemText">
+    			<h1>Designing is The Cool</h1>
+    			<p>Our most popular service is our Virtual Receptionist.<br>
+    			 We know that ...</p>
+    				<button>Know more</button>
+    				<i class="far fa-long-arrow-right"></i>
+    			   </div>
+                </div>
+    		    </div>
+    		    <div class="servicesImg__item">
+    		<div class="servicesImg__itemBack">
+    		
+    			    <div class="servicesImg__itemText">
+    			<h1>PSD TO HTML KORI</h1>
+    			<p>We know that sometimes it’s something and you middle most..</p>
+    				<button>Know more</button>
+    				<i class="far fa-long-arrow-right"></i>
+    			   </div>
+    		   </div>
+    			</div>
+    		    </div>
+    		     <div class="servicesImgColumn"> 
+    		     	
+    			<div class="servicesImg__item">
+    			<div class="servicesImg__itemBack">
+    			    <div class="servicesImg__itemText">
+    			 <h1>Cool psd Design</h1>
+    			<p>Our most popular service is our we know <br>
+    				that sometimes it’s something and you<br>
+    				middle most..</p>
+    				<button>Know more</button>
+    				<i class="far fa-long-arrow-right"></i>
+    			   </div>
+</div>
+    		    </div>
+    		    <div class="servicesImg__item" id="a">
+    		    	<div class="servicesImg__itemBack">
+    			    <div class="servicesImg__itemText">
+    			<h1>Designing is The CooL LOVE FOR.</h1>
+    			<p>Our most popular service is our Virtual Receptionist. We<br>
+    				know that sometimes it’s something and you middle most<br> 
+    				this job was posted less than five minutes ago, and we think <br>
+    				it’s a good match for you. If you submit a proposal now, you’ll <br>
+    				be one of the first candidates. You may even catch the client<br>
+    				 while they’re still online.</p>
+    				<button>Know more</button>
+    				<i class="far fa-long-arrow-right"></i>
+    			   </div>
+</div>
+    		    </div>
+    			</div>
+    		</div>
+		</div>
+	</div>
+</section>
+<section class="blockPortfolio">
+	 <a name="id5"></a>
+	<div class="container">
+		<div  class="portfolio">
+ <div class="siteHeadline">
+    		<h1>Small team</h1>
+    		<p>Lorem ipsum dolor sit amet event landing template</p>
+    		 </div>
+    		 <div class="portfolio__content">
+    		 	<div class="portfolio__table">
+    		 	<div class="portfolio__informColumn">
+    		 		<div class="portfolio__informInform">
+    		 		<img src="img/porfolio1.png">
+    		 		<div class="portfolio__informColumnItem">
+    		 			<h1>Negs RAYHAN <span>/ UI Designer<span></h1>
+    		 			<p>Lorem Ipsum is not simply is <br> 
+    		 			an action designer random text<br>
+                         It has roots in a piece. </p>
+                         <div class=portfolio__informColumnIcon>
+                         	<img src="img/porfolioIcon1.png">
+                         	 <img src="img/portfolioIcon2.png">
+                         	 <img src="img/portfolioIcon3.png">
+                         	<img src="img/portfolioIcon4.png">
+                         </div>
+    		 		</div>
+    		 		</div>
+    		 		
+                     <div class="portfolio__informInform">
+    		 		<img src="img/porfolio2.png">
+    		 		<div class="portfolio__informColumnItem">
+    		 			<h1>AL RAYHAN <span>/ UI Designer<span></h1>
+    		 			<p>Lorem Ipsum is not simply is <br> 
+    		 			an action designer random text<br>
+                         It has roots in a piece. </p>
+                         <div class=portfolio__informColumnIcon>
+                         	<img src="img/porfolioIcon1.png">
+                         	 <img src="img/portfolioIcon2.png">
+                         	 <img src="img/portfolioIcon3.png">
+                         	<img src="img/portfolioIcon4.png">
+                         </div>
+    		 		</div>
+    		 		</div>
+
+    		 		  <div class="portfolio__informInform">
+    		 		<img src="img/porfolio3.png">
+    		 		<div class="portfolio__informColumnItem">
+    		 			<h1>AL RAYHAN <span>/ UI Designer<span></h1>
+    		 			<p>Lorem Ipsum is not simply is <br> 
+    		 			an action designer random text<br>
+                         It has roots in a piece. </p>
+                         <div class=portfolio__informColumnIcon>
+                         	<img src="img/porfolioIcon1.png">
+                         	 <img src="img/portfolioIcon2.png">
+                         	 <img src="img/portfolioIcon3.png">
+                         	<img src="img/portfolioIcon4.png">
+                         </div>
+    		 		</div>
+    		 		</div>
+    		 		
+    		 	
+    		 	</div>
+    		 	<div class="portfolio__informColumn">
+
+    		 		  <div class="portfolio__informInform">
+    		 		<img src="img/porfolio4.png">
+    		 		<div class="portfolio__informColumnItem">
+    		 			<h1>AL RAYHAN <span>/ UI Designer<span></h1>
+    		 			<p>Lorem Ipsum is not simply is <br> 
+    		 			an action designer random text<br>
+                         It has roots in a piece. </p>
+                         <div class=portfolio__informColumnIcon>
+                         	<img src="img/porfolioIcon1.png">
+                         	 <img src="img/portfolioIcon2.png">
+                         	 <img src="img/portfolioIcon3.png">
+                         	<img src="img/portfolioIcon4.png">
+                         </div>
+    		 		</div>
+    		 		</div>
+
+    		 		  <div class="portfolio__informInform">
+    		 		<img src="img/porfolio5.png">
+    		 		<div class="portfolio__informColumnItem">
+    		 			<h1>AL RAYHAN <span>/ UI Designer<span></h1>
+    		 			<p>Lorem Ipsum is not simply is <br> 
+    		 			an action designer random text<br>
+                         It has roots in a piece. </p>
+                         <div class=portfolio__informColumnIcon>
+                         	<img src="img/porfolioIcon1.png">
+                         	 <img src="img/portfolioIcon2.png">
+                         	 <img src="img/portfolioIcon3.png">
+                         	<img src="img/portfolioIcon4.png">
+                         </div>
+    		 		</div>
+    		 		</div>
+
+    		 		  <div class="portfolio__informInform">
+    		 		<img src="img/porfolio1.png">
+    		 		<div class="portfolio__informColumnItem">
+    		 			<h1>AL RAYHAN <span>/ UI Designer<span></h1>
+    		 			<p>Lorem Ipsum is not simply is <br> 
+    		 			an action designer random text<br>
+                         It has roots in a piece. </p>
+                         <div class=portfolio__informColumnIcon>
+                         	<img src="img/porfolioIcon1.png">
+                         	 <img src="img/portfolioIcon2.png">
+                         	 <img src="img/portfolioIcon3.png">
+                         	<img src="img/portfolioIcon4.png">
+                         </div>
+    		 		</div>
+    		 		</div>
+    		 		
+    		 	</div>
+    		 </div>
+		</div>
+	</div>
+</section>
+
+	<section class="blockReviews">
+		<div class="container">
+		<div class="reviews">
+			<div class="siteHeadline">
+    		<h1>What they says</h1>
+    		<p>Lorem ipsum dolor sit amet event landing template</p>
+    		 </div>
+    		 <div class="revievsSlider">
+              <div class="reviewsSliderPhoto">
+              	<div class="reviewsSliderPhotoItem">
+              		<div class="reviewsSliderPhotoItemBackground"></div>
+              	</div>
+              <div class="reviewSliderText">
+              	<h1>AL RAYHAN /UI/UX DESIGNER</h1>
+              	<p>Lorem Ipsum is simply dummy text of the printing and <br> 
+          
+                an unknown printer took a galley of type and scrambled it <br> 
+              make a type specimen book.</p>
+               	 <div class="revievsSliderIcons">
+    		   	<img src="img/reviewsStar.png">
+    		   	<img src="img/reviewsStar.png">
+    		   	<img src="img/reviewsStar.png">
+    		   	<img src="img/reviewsStar.png">
+    		   	<img src="img/reviewsStar.png">
+    		   </div>
+    		 </div>
+    		   </div>
+    		     <div class="reviewsSliderPhoto">
+              	<div class="reviewsSliderPhotoItem">
+              		<div class="reviewsSliderPhotoItemBackground"></div>
+              	</div>
+              <div class="reviewSliderText">
+              	<h1>AL RAYHAN /UI/UX DESIGNER</h1>
+              	<p>Lorem Ipsum is wewerewrewfwfewfewfewfewy text of the printing and <br> 
+            
+                an unknown printer took a galley of type and scrambled it <br> 
+              make a type specimen book.</p>
+               	 <div class="revievsSliderIcons">
+    		   	<img src="img/reviewsStar.png">
+    		   	<img src="img/reviewsStar.png">
+    		   	<img src="img/reviewsStar.png">
+    		   	<img src="img/reviewsStar.png">
+    		   	<img src="img/reviewsStar.png">
+    		   </div>
+    		 </div>
+    		   </div>
+    		       <div class="reviewsSliderPhoto">
+              	<div class="reviewsSliderPhotoItem">
+              		<div class="reviewsSliderPhotoItemBackground"></div>
+              	</div>
+              <div class="reviewSliderText">
+              	<h1>AL RAYHAN /UI/UX DESIGNER</h1>
+              	<p>Lorem Ipsum issdfsdfdsftext ever since the 1500s, when
+               
+             make a type specimen book.</p>
+               	 <div class="revievsSliderIcons">
+    		   	<img src="img/reviewsStar.png">
+    		   	<img src="img/reviewsStar.png">
+    		   	<img src="img/reviewsStar.png">
+    		   	<img src="img/reviewsStar.png">
+    		   	<img src="img/reviewsStar.png">
+    		   </div>
+    		 </div>
+    		   </div>
+    		       <div class="reviewsSliderPhoto">
+              	<div class="reviewsSliderPhotoItem">
+              		<div class="reviewsSliderPhotoItemBackground"></div>
+              	</div>
+              <div class="reviewSliderText">
+              	<h1>AL RAYHAN /UI/UX DESIGNER</h1>
+              	<p>LHe;;psdfsdfdsfdsfsdfdsfsdfdsfdsfsdbled it <br> 
+               <span> make a type specimen book.<spam></p>
+               	 <div class="revievsSliderIcons">
+    		   	<img src="img/reviewsStar.png">
+    		   	<img src="img/reviewsStar.png">
+    		   	<img src="img/reviewsStar.png">
+    		   	<img src="img/reviewsStar.png">
+    		   	<img src="img/reviewsStar.png">
+    		   </div>
+    		 </div>
+    		   </div>
+    		    <div class="reviewsSliderPhoto__buttons">
+    		     <div class="reviewsSliderPhoto__buttonsDots">
+                    <span class="dot" onclick="currentSlidesR(1)"></span>
+                    <span class="dot" onclick="currentSlidesR(2)"></span>
+                    <span class="dot" onclick="currentSlidesR(3)"></span>
+                    <span class="dot" onclick="currentSlidesR(4)"></span>
+                </div>
+    		   
+    		 	<div>
+    		 		<div class="reviewsSliderPhoto__buttonsArrows">
+    		 		<i class="fas fa-chevron-left" id="next"></i>
+    		 		<i class="fas fa-chevron-right" id="prev"></i>
+    		 		</div>
+    		 	</div>
+              
+		</div>
+		</div>
+	</section>
+	<section class="blockIcons">
+		<div class="container">
+			<div class="icons">
+				<div class="iconsContent">
+					<div class="iconsContentItems">
+					<i class="fab fa-stripe"></i>
+					<i class="fab fa-apple-pay"></i>
+					<i class="fab fa-cc-paypal"></i>
+					<i class="fab fa-apple-pay"></i>
+					<i class="fab fa-cc-paypal"></i>
+					</div>
+					
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	<section class="blockMap">
+		<div class="blockMapBackground">
+			<div class="container">
+			<div class="map">
+				<form class="map__form">
+					<input id="mapInput"type="text" name="Name" value="Name" />
+					<input id="mapInput"type="text" name="Number" value="Number" />
+					<input id="mapInput"type="text" name="Email" value="Email" />
+					<textarea id="mapInput" name="Message">Message</textarea>
+					<button type="submit">Send message</button>
+				</form>
+				<div class="map__text">
+                  	<ul>
+                  	<li>Adress line 1 </li>
+                    <li>Adress line 2 </li>
+                    <li>Phone: +548 945645</li>
+                    <li>Fax: +456456 54546</li>
+                </ul>
+                    <ul>
+                    <li> Web: www.designagency.net<li>
+                    <li>E-mail: info@designagency.ne</li>
+                </ul>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2586.2309727359693!2d34.539916715190046!3d49.593393656627015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d825f89015101d%3A0x6bf893bb0682dde2!2zItCm0LXQt9Cw0YDRjCAtINC40LzQv9C10YDQuNGPINC00LXQu9C40LrQsNGC0LXRgdC-0LIiINCU0LXQu9C40LrQsNGC0LXRgSDQvNCw0YDQutC10YI!5e0!3m2!1sru!2sua!4v1568457150179!5m2!1sru!2sua" width="430" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	
+  </main>
+    <footer class="footer">
+    	<section class="footerBlock">
+    		<div class="container">
+            <div class="footerBlock__content">
+            	<div class="footerBlock__contentText">
+            	<p>Follow us</p>
+            </div>
+            	<div class="footerBlock__contentIcons">
+            		<div class="footerBlock__contentIconsItems" id="footerElement">
+            			<img src="img/footerIcons1.png">
+            		</div>
+            		<div class="footerBlock__contentIconsItems">
+ <img src="img/footerIcons2.png">
+             		</div>
+            		<div class="footerBlock__contentIconsItems">
+            			 <img src="img/footerIcons3.png">
+            		</div>
+            		<div class="footerBlock__contentIconsItems">
+            			<img src="img/footerIcons4.png">
+            		</div>
+            	</div>
+                 <p>Copyright Masum Parvej, All Rights Reserved<p>
+            </div>
+         	</div>
+    		
+    	</section>
+    </footer>
+
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <script src="wow.min.js"></script>
+    <script>
+              new WOW().init();
+    </script>
+    <script src="https://kit.fontawesome.com/066621f315.js"></script>
+    <script src="javascript.js"></script>
+
+
+</body>
+</html>
