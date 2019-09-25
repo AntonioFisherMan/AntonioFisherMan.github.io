@@ -8,7 +8,6 @@ $panel = [
 function getConfig($key)
 {
     if (empty($key)) {
-
         return null;
     }
     $config = [
@@ -24,16 +23,16 @@ function getConfig($key)
 }
 function getOptions($min,$max)
 {
-$connect=mysqli_connect(DB_HOST,DB_USER,DB_PASS,DB_NAME);
-if($connect)
-{
-    $query="SELECT id,name,value FROM options LIMIT $min,$max";
-    $result=mysqli_query($connect,$query);
-    if($result->num_rows>0){
-        mysqli_close($connect);
-        return mysqli_fetch_all($result,MYSQLI_ASSOC);
+    $connect=mysqli_connect(DB_HOST,DB_USER,DB_PASS,DB_NAME);
+    if($connect)
+    {
+        $query="SELECT id,name,value FROM options LIMIT $min,$max";
+        $result=mysqli_query($connect,$query);
+        if($result->num_rows>0){
+            mysqli_close($connect);
+            return mysqli_fetch_all($result,MYSQLI_ASSOC);
+        }
     }
-}
 }
 function getOptionId($name,$value)
 {
@@ -41,7 +40,6 @@ function getOptionId($name,$value)
     {
         return null;
     }
-
     $connect=mysqli_connect(DB_HOST,DB_USER,DB_PASS,DB_NAME);
     if($connect)
     {
@@ -55,11 +53,10 @@ function getOptionId($name,$value)
 }
 function getOption($name)
 {
-if(empty($name))
-{
-    return null;
-}
-
+    if(empty($name))
+    {
+        return null;
+    }
     $connect=mysqli_connect(DB_HOST,DB_USER,DB_PASS,DB_NAME);
     if($connect)
     {
@@ -79,7 +76,6 @@ function addOption($name,$value)
         $query = "INSERT INTO options(name,value) VALUES ('$name','$value')";
         mysqli_query($connect,$query);
         if(mysqli_affected_rows($connect)==1){
-
             return true;
         }
         else{
@@ -97,7 +93,6 @@ function deleteOptions($id)
         $query="DELETE FROM options WHERE id='$id' LIMIT 1";
         mysqli_query($connect,$query);
         if(mysqli_affected_rows($connect)==1){
-
             return true;
         }
         else{
@@ -105,20 +100,4 @@ function deleteOptions($id)
         }
         mysqli_close($connect);
     }
-
 }
-
-?>
-<nav >
-    <ul class="navigate">
-        <?php
-        foreach ($panel as $key => $value) {
-            echo "<li>$key<div class='divHover'>";
-            foreach ($value as $key2 => $value2) {
-                echo "<span><a href='$value2'>$key2</a></span>";
-            }
-            echo "</div></li>";
-        }
-        ?>
-    </ul>
-</nav>
