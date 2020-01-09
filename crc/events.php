@@ -4,20 +4,26 @@ require_once ("head.php");
 <?php
 require_once ("menu.php");
 ?>
-<section class="activities__block">
+<section class="activities__block indent">
 <div class="wrapper">
     <div class="activities">
        <div class="activities__headline">
            <h1>Мероприятия</h1>
-           <img src="" alt="">
+           
        </div>
+       <div class="site__icon">
+            <hr>
+            <hr>
+            </div>
 
         <div class="activities__item">
             <div class="activities__img">
-                <img src="img/img.png" alt="">
+                <img src="img/conf.jpeg" alt="">
             </div>
             <div class="activities__inform">
-                <h1>Молодежная Конференция FOLLOW</h1>
+              
+                <h4>Молодежная Конференция FOLLOW</h4>
+                <p>2-4 июля</p>
                 <p>Молодежная миссионерская конференция «FOLLOW Conference» состоится в <br>
                     Полтаве (Украина) 2-4 июля. Ее цель: оснастить и вдохновить молодое поколение <br>
                     идти за Христом до края земли, исполняя Его миссию.
@@ -36,10 +42,11 @@ require_once ("menu.php");
 
         <div class="activities__item">
             <div class="activities__img">
-                <img src="img/img.png" alt="">
+                <img src="img/events2.jpeg" alt="">
             </div>
             <div class="activities__inform">
-                <h1>Воскресное Богослужение</h1>
+                <h4>Воскресное Богослужение</h4>
+                <p>воскресенье 11:00</p>
                 <p>
                     В Бибилии написано: "...шесть дней работай, а седьмой день Господу".<br>
                     Каждое воскресенье в ХРЦ происходят Богослужения - это время прославления,<br>
@@ -52,10 +59,11 @@ require_once ("menu.php");
         </div>
         <div class="activities__item">
             <div class="activities__img">
-                <img src="img/img.png" alt="">
+                <img src="img/events3.jpeg" alt="">
             </div>
             <div class="activities__inform">
-                <h1>Молодежный клуб "Wake up !"</h1>
+                <h4>Молодежный клуб "Wake up !"</h4>
+                <p>суббота 17:00</p>
                 <p>Молодёжное движение Wake Up - место где молодёжь может развить свои навыки в <br>
                     сферах: музыки, организации мероприятий, лидерства. За последний год у нас<br>
                     образовалась команда из молодых и амбициозных лидеров. Ребята уже имели <br>
@@ -72,10 +80,11 @@ require_once ("menu.php");
         </div>
         <div class="activities__item">
             <div class="activities__img">
-                <img src="img/img.png" alt="">
+                <img src="img/events4.jpeg" alt="">
             </div>
             <div class="activities__inform">
-                <h1>Домашняя группа</h1>
+                <h4>Домашняя группа</h4>
+                <p>вторник 18:00</p>
                 <p>Домашние группы — это то, что помогает строить христианскую жизнь.<br>
                     Еженедельно мы встречаемся в небольших группах, чтобы участвовать в жизни друг друга.<br>
                     Это общение, дружба, совместное изучение Писания и молитва. Каждый найдет здесь любовь Бога и Его принятие.
@@ -85,10 +94,11 @@ require_once ("menu.php");
         </div>
         <div class="activities__item">
             <div class="activities__img">
-                <img src="img/img.png" alt="">
+                <img src="img/events5.jpeg" alt="">
             </div>
             <div class="activities__inform">
-                <h1>Молитвенные встречи</h1>
+                <h4>Молитвенные встречи</h4>
+                <p>каждая пятница 18:00</p>
                 <p>Молитва - важная часть жизни христианина. Всей церковью мы молимся за нужды<br>
                     друг-друга, церквовь, миссионеров и нашу страну.<br>
                     Присоеденяйтесь к нашим молитвенным собраниям!
@@ -100,10 +110,11 @@ require_once ("menu.php");
         </div>
         <div class="activities__item">
             <div class="activities__img">
-                <img src="img/img.png" alt="">
+                <img src="img/events6.jpeg" alt="">
             </div>
             <div class="activities__inform">
-                <h1>Классы ученичества</h1>
+                <h4>Классы ученичества</h4>
+                <p>каждое воскресеньк 13:00</p>
                 <p>Еженедельно у членов церкви есть возможность обучаться на классах ученичества.<br>
 
                     Классы ученичества - это возможность утверждаться в Евангелии для учеников Иисуса Христа.<br>
@@ -118,10 +129,11 @@ require_once ("menu.php");
         </div>
         <div class="activities__item">
             <div class="activities__img">
-                <img src="img/img.png" alt="">
+                <img src="img/events7.jpeg" alt="">
             </div>
             <div class="activities__inform">
-                <h1>Золотой век</h1>
+                <h4>Золотой век</h4>
+                <p>каждая вторая суббота месяца 12:00</p>
                 <p>Золотой век — это время, когда люди, прожившие жизнь, могут собираться и узнавать Бога.<br>
                     Библия говорит, что в Духовном росте нет финиша.<br>
                     Люди в золотом веке могут обрести надежду и веру, несмотря ни на что.<br>
@@ -135,10 +147,11 @@ require_once ("menu.php");
         </div>
         <div class="activities__item">
             <div class="activities__img">
-                <img src="img/img.png" alt="">
+                <img src="img/events8.jpeg" alt="">
             </div>
             <div class="activities__inform">
-                <h1>Воскресная школа</h1>
+                <h4>Воскресная школа</h4>
+                <p>каждое воскресенье 11:30</p>
                 <p>Детская Воскресная Школа всегда с радостью и теплотой встретит ваших детей.<br>
                     Занятия здесь проходит очень весело, по—особенному интересно и увлекательно!<br>
                     А самое важное- учителя воскресной школы знакомят каждого ребёнка с Иисусом и <br>
